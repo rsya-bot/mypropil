@@ -7,12 +7,8 @@ router.get('/', (req, res) => {
     res.sendFile(__path + '/views/home.html')
 })
 
-router.get('/api/about', (req, res) => {
+router.get('/', (req, res) => {
     res.sendFile(__path + '/views/about.html')
-})
-
-router.get('/api/news', (req, res) => {
-    res.redirect('https://raw.githubusercontent.com/Zhirrr/My-SQL-Results/main/Berita.json')
 })
 
 router.get('/config', (req, res) => {
