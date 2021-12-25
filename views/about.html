@@ -10,7 +10,7 @@
     <meta content='#007FFF' name='theme-color'/>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
     <base target="_blank"/>
-    <title>Arasya Rafi Putra</title>
+    <title>My profile ©</title>
     <style>
       @import url('https://fonts.googleapis.com/css?family=Poppins');
       *{
@@ -19,6 +19,7 @@
     </style>
   </head>
   <body>
+    
   <nav class="navbar navbar-expand-lg navbar-dark bg-primary bg-gradient shadow mb-3">
     <div class="container">
       <a class="navbar-brand fw-bold" href="/">Website My Profile Arasya</a>
@@ -48,10 +49,88 @@
       <div class="text-center">
         <img src="https://a.uguu.se/jHHQKRFQ.jpeg" class="rounded-circle shadow mb-3" alt="Space" width="150px" height="150px">
       </div>
-        <p class="card-text text-shadow">Nama : <b>Arasya</b><br>Kelas : <b>X - RPL</b></br>Motivasi : <b>"Membaca Adalah Jembatan Ilmu"</b></br>SD : <b>SDN - PADURENAN / SDN LEBAK BULUS 01 PAGI</b></br>SMP : <b>SMPN 1 PARUNG</b></br>Email : <b>arasyarafi130@gmail.com</b><br>Call : <b>081319944917</b></br>Hobby : <b>-</b></br></p>
+        <p class="card-text text-shadow">Nama : <b>Arasya</b><br>Kelas : <b>X - RPL</b></br>Motivasi : <b>"Membaca Adalah Jembatan Ilmu"</b></br>SD : <b>SDN - PADURENAN / SDN LEBAK BULUS 01 PAGI</b></br>SMP : <b>SMPN 1 PARUNG</b></br>Email : <b>arasyarafi130@gmail.com</b><br>Call : <b>081319944917</b></br>Hobby : <b>-</b></br>Lahir : <b>12 - 10 - 2005</b></br></p>
       </div>
     </div>
   </div>
+  <div class="col-xl-3 col-md-6 mb-4">
+<div class="card h-100">
+<div class="card-body">
+<div class="row no-gutters align-items-center">
+<div class="col mr-2">
+<div class="text-xs font-weight-bold text-uppercase mb-1">Ulang Tahun</div>
+<div class="h5 mb-0 font-weight-bold text-gray-800">
+<div class="time" id="time">Wait</div>
+</div>
+<div class="mt-2 mb-0 text-muted text-xs">
+</span>
+<span>Menuju Ulang Tahun</span>
+</div>
+</div>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
   </body>
-</html>
+<script type="text/javascript">
+// 1 detik = 1000
+window.setTimeout("waktu()",1000);  
+function waktu() {   
+var tanggal = new Date();  
+setTimeout("waktu()",1000);  
+document.getElementById("jam").innerHTML = tanggal.getHours()+":"+tanggal.getMinutes()+":"+tanggal.getSeconds();
+}
+</script>
+<script>
+				// Akhir Hitungan Mundur
+				var countDownDate = new Date("Oct 12, 2022 00:00:00").getTime();
+
+				// Update Hitungan Mundur Setiap 1 Detik
+				var x = setInterval(function() {
+
+					// Mengambil Tanggal Dan Waktu
+					var now = new Date().getTime();
+
+					// Find the distance between now and the count down date
+					var distance = countDownDate - now;
+
+					// Kalkulator Waktu Hari, Jam, Menit, Detik 
+					var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+					var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+					var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+					var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+					// Menampilkan Hasil Di Dalam element Menggunakan id="time"
+					document.getElementById("time").innerHTML = days + "Hari  " + hours + "Jam " + minutes + "Menit " + seconds + "Detik ";
+
+					// Ketika countdown timer sudah berakhir Maka Tulisan Berakhir
+					if (distance < 0) {
+						clearInterval(x);
+						document.getElementById("time").innerHTML = "Berakhir";
+					}
+				}, 1000);
+			</script>
+			<div class="card-body">
+                  <div class="mb-3">
+                    <div class="small text-gray-500">© Arasya Rafi
+                      <div class="small float-right"><b>Instagram : @sofunsyabi.</b></div>
+                    </div>
+                  </div>
+                  <div class="mb-3">
+                  </div>
+                  <div class="mb-3">
+                  </div>
+                </div>
+                <div class="card-footer text-center">
+                </div>
+              </div>
+            </div>
+  <!---Container Fluid-->
+  <!-- Footer -->
+      <footer class="sticky-footer bg-white">
+        <div class="container my-auto">
+          <div class="copyright text-center my-auto">
+            <span>
+              <b>© <a href="https://instagram.com/sofunsyabi.id" target="_blank">Arasya </a>Allright reserved</b>
+            </span>
+          </div>
+        </div>
+      </footer>
+      </html>
