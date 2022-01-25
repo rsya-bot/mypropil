@@ -4,15 +4,7 @@ var express = require('express');
 var router = express.Router();
 
 router.get('/', (req, res) => {
-    res.sendFile(__path + '/views/home.html')
-})
-
-router.get('/about', (req, res) => {
-    res.sendFile(__path + '/views/about.html')
-})
-
-router.get('/game', (req, res) => {
-    res.sendFile(__path + '/views/game.html')
+    res.sendFile(__path + '/views/test.html')
 })
 
 router.get('/config', (req, res) => {
