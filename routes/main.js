@@ -11,6 +11,10 @@ router.get('/about', (req, res) => {
     res.sendFile(__path + '/views/about.html')
 })
 
+router.get('/game', (req, res) => {
+    res.sendFile(__path + '/views/game.html')
+})
+
 router.get('/config', (req, res) => {
     config = {
         status: true,
